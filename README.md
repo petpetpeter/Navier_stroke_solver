@@ -1,7 +1,7 @@
 # Navier_stroke_solver
 2D-Channel Flow inlet boundary condition and 3D-Channel Flow periodic boundary condition
 ## How to run a code
-1. Clone respiratory
+1. Clone an respiratory
 >git clone ...
 2. Create output folder in respiratory folder (default folder : sim_result)
 >mkdir sim_result
