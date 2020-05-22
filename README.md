@@ -3,8 +3,8 @@
 ## How to run a code
 1. Clone an respiratory
 >git clone ...
-2. Create output folder in respiratory folder (default folder : sim_result)
->mkdir sim_result
+2. Create output folder in respiratory folder (name format : "variable" + "_vtk")
+>mkdir u_vtk
 3. Edit parameter in parameter.config (default parameter is fine)
 -
 -
