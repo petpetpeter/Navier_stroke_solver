@@ -15,4 +15,4 @@
 -
 4. Compile main.cpp
 >g++ -o your_program_name main.cpp
-5.Run your_program_name and View the result in Paraview
+5. Run your_program_name and View the result in Paraview
