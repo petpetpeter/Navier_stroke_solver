@@ -398,7 +398,7 @@ void write_result(double*** gen, double dx, double dy, double dz,int nx, int ny,
     //nx, ny = size (2d)
     //ts = timestep
     ofstream myfile;
-    string file_name = "vtk_"+ x +"/test_" + to_string(t) + ".vtk";
+    string file_name = "vtk_"+ x +"/ThreeD_" + to_string(t) + ".vtk";
     myfile.open(file_name);
     // Paraview stuff
     //Header
