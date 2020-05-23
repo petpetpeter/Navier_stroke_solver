@@ -43,3 +43,4 @@ g++ -o your_program_name channel_flow_2d.cpp
 g++ -o your_program_name channel_flow_3d.cpp
 ```
 5. Run your_program_name and View the result in Paraview
+- It may take 30 minitues to finish 100,000 time step. you may stop the program after 10,000 time step. 
