@@ -26,6 +26,8 @@ int main() {
     double eps = 0.01; //for poisson iteration
     double Re = 50;
     double ts = 0.002;
+    //In case of Inlet Boundary Condition
+    double u_in = 1.0;
 ```
 4. Compile main.cpp
 >g++ -o your_program_name main.cpp
