@@ -3,14 +3,14 @@
 ## How to run a code
 1. Clone an respiratory
 ```bash
-> git clone https://github.com/petpetpeter/Navier_stroke_solver.git
+>git clone https://github.com/petpetpeter/Navier_stroke_solver.git
 ```
 2. Create output folder in respiratory folder (name format : "variable" + "_vtk")
 ```bash
-> mkdir u_vtk
-> mkdir v_vtk
-> mkdir w_vtk
-> mkdir p_vtk
+>mkdir u_vtk
+>mkdir v_vtk
+>mkdir w_vtk
+>mkdir p_vtk
 ```
 3. Edit parameter in the main function
 ```c++
@@ -37,9 +37,8 @@ int main() {
     double u_in = 1.0;
 ```
 4. Compile main.cpp
+```bash
 >g++ -o your_program_name main.cpp
-5. Run your_program_name and View the result in Paraview
-```c++
-void seo(){
-}
 ```
+5. Run your_program_name and View the result in Paraview
+
