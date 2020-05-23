@@ -43,7 +43,7 @@ int main() {
 g++ -o your_program_name channel_flow_2d.cpp
 g++ -o your_program_name channel_flow_3d.cpp
 ```
-5. Run your_program_name and View the result in Paraview
+5. Run your_program_name. The output files will apear as .vtk files (which can be viewed in Paraview) in the folders created in step 2.
 - It may take more than 2 hours to finish 100,000 time steps for the 3D-simulation.
 - For a faster 3D simulation, you may change the parameters. A proven combination that provides faster simulation (aprox. 15 min) but lower detail is shown below as an example. 
 ```c++
