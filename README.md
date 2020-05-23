@@ -2,17 +2,34 @@
 2D-Channel Flow inlet boundary condition and 3D-Channel Flow periodic boundary condition
 ## How to run a code
 1. Clone an respiratory
->git clone ...
+>git clone https://github.com/petpetpeter/Navier_stroke_solver.git
 2. Create output folder in respiratory folder (name format : "variable" + "_vtk")
 >mkdir u_vtk
-3. Edit parameter in parameter.config (default parameter is fine)
--
--
--
--
--
--
--
+>mkdir v_vtk
+>mkdir w_vtk
+>mkdir p_vtk
+3. Edit parameter in the main function
+```c++
+int main() {
+    int nx = 11;
+    int ny = 11;
+    int nz = 21;
+    double x_size = 4.0 * 3.1416;//streamwise
+    double y_size = 2.0 * 3.1416;//spanwise
+    double z_size = 2.0;//chanel thickness
+    double dx = x_size / (nx - 3);
+    double dy = y_size / (ny - 3);
+    double dz = z_size / (nz - 2);
+    double donor = 0;
+    double gx = 1;
+    double gy = 0;
+    double gz = 0;
+    int t_max = 100000;
+    int it_max = 100; //for poisson iteration
+    double eps = 0.01; //for poisson iteration
+    double Re = 50;
+    double ts = 0.002;
+```
 4. Compile main.cpp
 >g++ -o your_program_name main.cpp
 5. Run your_program_name and View the result in Paraview
