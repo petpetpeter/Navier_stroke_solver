@@ -64,7 +64,7 @@ int main() {
     int it_max = 100; //for poisson iteration
     double eps = 0.01; //for poisson iteration
     double Re = 50;
-    double ts = 0.002;
+    double ts = 0.005;
     //In case of Inlet Boundary Condition
     double u_in = 1.0;
 ```
