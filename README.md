@@ -37,7 +37,7 @@ int main() {
     //In case of Inlet Boundary Condition
     double u_in = 1.0;
 ```
-4. Compile main.cpp
+4. Compile channel_flow_*.cpp
 ```bash
 g++ -o your_program_name channel_flow_2d.cpp
 g++ -o your_program_name channel_flow_3d.cpp
