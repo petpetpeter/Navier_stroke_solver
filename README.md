@@ -1,11 +1,11 @@
 # Navier_stroke_solver
-2D-Channel Flow inlet boundary condition and 3D-Channel Flow periodic boundary condition
-## How to run a code
-1. Clone an respiratory
+2D-Channel Flow inlet boundary condition and 3D-Channel body-force driven flow with periodic boundary condition
+## How to run the code
+1. Clone the provided respiratory
 ```bash
 git clone https://github.com/petpetpeter/Navier_stroke_solver.git
 ```
-2. Create output folder in respiratory folder (name format : "variable" + "_vtk")
+2. Create output folders "in the respiratory folder" (name format : "variable" + "_vtk")
 ```bash
 cd Navier_stroke_solver
 mkdir vtk_u
@@ -14,6 +14,7 @@ mkdir vtk_w
 mkdir vtk_p
 ```
 3. Edit parameter in the main function
+All parameters should be set approprieately to ensure stability.  Recommended proven combinations are provided as the defualt combinations for both the 2D and 3D files.
 ```c++
 int main() {
     int nx = 11; //number_of_grid
@@ -43,8 +44,8 @@ g++ -o your_program_name channel_flow_2d.cpp
 g++ -o your_program_name channel_flow_3d.cpp
 ```
 5. Run your_program_name and View the result in Paraview
-- It may take 2 hours to finish 100,000 time step for 3D-simulation.
-- For faster simulation with lower detail, you may change the parameter in main as follow
+- It may take more than 2 hours to finish 100,000 time steps for the 3D-simulation.
+- For a faster 3D simulation, you may change the parameters. A proven combination that provides faster simulation (aprox. 15 min) but lower detail is shown below as an example. 
 ```c++
 int main() {
     int nx = 7; //number_of_grid
@@ -68,3 +69,10 @@ int main() {
     //In case of Inlet Boundary Condition
     double u_in = 1.0;
 ```
+6. (OPTIONAL) Unwanted outputs can be deselected by commenting out "writeresult" functions associated with the unwanted outputs at the bottom of the .cpp files ( all outputs:u,v,w,and p are selected by defualt).
+For an example, if p values are unwanted as an ouput:
+```c++
+ write_result(u_new, dx,dy,dz, nx, ny, nz, t, "u");
+ write_result(v_new, dx, dy, dz, nx, ny, nz, t, "v");
+ write_result(w_new, dx, dy, dz, nx, ny, nz, t, "w");
+// write_result(p_new, dx, dy, dz, nx, ny, nz, t, "p");
