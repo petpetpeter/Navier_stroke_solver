@@ -15,11 +15,11 @@ mkdir p_vtk
 3. Edit parameter in the main function
 ```c++
 int main() {
-    int nx = 11;
-    int ny = 11;
-    int nz = 21;
-    double x_size = 4.0 * 3.1416;//streamwise
-    double y_size = 2.0 * 3.1416;//spanwise
+    int nx = 11; //number_of_grid
+    int ny = 11; 
+    int nz = 21; 
+    double x_size = 4.0 * 3.1416;//streamwise_length
+    double y_size = 2.0 * 3.1416;//spanwise_length
     double z_size = 2.0;//chanel thickness
     double dx = x_size / (nx - 3);
     double dy = y_size / (ny - 3);
