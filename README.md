@@ -47,9 +47,9 @@ g++ -o your_program_name channel_flow_3d.cpp
 - For faster simulation with lower detail, you may change the parameter in main as follow
 ```c++
 int main() {
-    int nx = 11; //number_of_grid
-    int ny = 11; 
-    int nz = 21; 
+    int nx = 7; //number_of_grid
+    int ny = 7; 
+    int nz = 9; 
     double x_size = 4.0 * 3.1416;//streamwise_length
     double y_size = 2.0 * 3.1416;//spanwise_length
     double z_size = 2.0;//chanel thickness
@@ -60,7 +60,7 @@ int main() {
     double gx = 1;
     double gy = 0;
     double gz = 0;
-    int t_max = 100000;
+    int t_max = 30000;
     int it_max = 100; //for poisson iteration
     double eps = 0.01; //for poisson iteration
     double Re = 50;
