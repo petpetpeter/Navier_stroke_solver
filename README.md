@@ -3,13 +3,15 @@
 ## How to run a code
 1. Clone an respiratory
 ```bash
-git clone https://github.com/petpetpeter/Navier_stroke_solver.git
+> git clone https://github.com/petpetpeter/Navier_stroke_solver.git
 ```
 2. Create output folder in respiratory folder (name format : "variable" + "_vtk")
->mkdir u_vtk;
->mkdir v_vtk;
->mkdir w_vtk;
->mkdir p_vtk;
+```
+> mkdir u_vtk
+> mkdir v_vtk
+> mkdir w_vtk
+> mkdir p_vtk
+```
 3. Edit parameter in the main function
 ```c++
 int main() {
