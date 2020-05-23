@@ -8,10 +8,10 @@ git clone https://github.com/petpetpeter/Navier_stroke_solver.git
 2. Create output folder in respiratory folder (name format : "variable" + "_vtk")
 ```bash
 cd Navier_stroke_solver
-mkdir u_vtk
-mkdir v_vtk
-mkdir w_vtk
-mkdir p_vtk
+mkdir vtk_u
+mkdir vtk_v
+mkdir vtk_w
+mkdir vtk_p
 ```
 3. Edit parameter in the main function
 ```c++
