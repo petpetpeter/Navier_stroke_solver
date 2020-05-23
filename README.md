@@ -2,7 +2,9 @@
 2D-Channel Flow inlet boundary condition and 3D-Channel Flow periodic boundary condition
 ## How to run a code
 1. Clone an respiratory
->git clone https://github.com/petpetpeter/Navier_stroke_solver.git
+```bash
+git clone https://github.com/petpetpeter/Navier_stroke_solver.git
+```
 2. Create output folder in respiratory folder (name format : "variable" + "_vtk")
 >mkdir u_vtk;
 >mkdir v_vtk;
