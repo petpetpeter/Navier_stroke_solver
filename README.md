@@ -38,7 +38,8 @@ int main() {
 ```
 4. Compile main.cpp
 ```bash
-g++ -o your_program_name main.cpp
+g++ -o your_program_name channel_flow_2d.cpp
+g++ -o your_program_name channel_flow_3d.cpp
 ```
 5. Run your_program_name and View the result in Paraview
 
