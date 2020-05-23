@@ -43,4 +43,7 @@ g++ -o your_program_name channel_flow_2d.cpp
 g++ -o your_program_name channel_flow_3d.cpp
 ```
 5. Run your_program_name and View the result in Paraview
-- It may take 30 minitues to finish 100,000 time step for 3D-simulation, you may stop the program after 10,000 time step. 
+- It may take 2 hours to finish 100,000 time step for 3D-simulation.
+- For faster simulation with less detailed, you may change the parameter in main as follow
+```c++
+```
