@@ -1,5 +1,15 @@
 # Navier_stroke_solver
+C++ Implementation Of Navier stroke solver
 2D-Channel Flow inlet boundary condition and 3D-Channel body-force driven flow with periodic boundary condition
+
+
+
+
+Simulation Example
+> https://www.youtube.com/watch?v=q78tEEAd3iw
+![image](https://user-images.githubusercontent.com/55285546/134767600-daf44b45-27ec-47ff-8985-6b0a8d561e2a.png)
+
+
 ## How to run the code
 1. Clone the provided respiratory
 ```bash
