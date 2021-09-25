@@ -3,7 +3,7 @@
 #include <iostream> // cout
 #include <cmath> // math lib
 #include <fstream> // file I/O
-#include <iomanip> //forsomething
+#include <iomanip> 
 #include<string>
 using namespace std;
 
