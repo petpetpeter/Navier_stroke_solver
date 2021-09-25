@@ -3,8 +3,7 @@
 #include <iostream> // cout
 #include <cmath> // math lib
 #include <fstream> // file I/O
-#include <iomanip> //forsomething
-#include<string>
+#include <iomanip> 
 using namespace std;
 
 void visualization_planex(double*** gen, int nx, int ny, int nz) {// later
